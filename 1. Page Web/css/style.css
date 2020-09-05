@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@1,600&display=swap');
+
+/* main Style */
+
+*{box-sizing:border-box;}
+ul{list-style:none;padding:0;margin:0;}
+a{text-decoration:none;}
+a{text-decoration:none;}
+.clear{width:100%;}
+.container{
+	position: relative;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+	flex-wrap:wrap;
+}
+.center {
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: center;}
+	
+#toggler,.icon i,.close-btn i{display:none;}
+						/* Start Styling Header */
+				  
+				/* Background Images */
+.header{position:relative;height:100vh;}
+.background-img{position:relative;}
+
+.background-img .img{
+	position:absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	background-size:cover;
+	background-position:50% 50%;
+	height:100vh;
+	background-image:url("../images/home-7.jpg");
+	z-index:-1;
+	filter: brightness(0.5);
+	
+	
+}
+
+
+				/* Logo + Navbar */
+
+.container .logo img,.container .navbar{height:110px;line-height:100px;}
+.container .logo img{max-width:100px;margin-top:4px;z-index:3;position:relative;}
+
+.container .navbar ul {display:flex;position:absolute;right:0;}
+.container .navbar ul a{color: #cacacc;}
+.container .navbar ul a:hover{color:#fff;}
+
+.container .navbar ul li {
+    padding: 12px;
+    text-transform: uppercase;
+    font-weight: bolder;
+
+}
+
+
+                    /*  Content */ 
+					
+.container .content{width:100%;text-align:center;position:relative;}
+.container .content h4{color:#fff;text-transform:uppercase;font-size:20px;letter-spacing: 8px;}
+.container .content h2{
+	color:#fff;
+	text-transform:uppercase;    
+	font-size: 40px;
+    font-weight: bolder;
+    letter-spacing: 5px;
+}
+.container .content h2 span{font-family: 'Titillium Web', sans-serif;text-transform:lowercase;display: block;}
+
+
+.container .content button{
+	padding: 20px 40px;
+	margin-top:60px;
+    background-color: rgba(5,5,2,0.9);
+    color: rgba(255,255,255,0.8);
+    border-style: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 1px;
+	box-shadow: 2px 2px 3px rgba(255,255,255,0.8);
+}
+
+
+/* Down */
+
+.header>span{
+    position: absolute;
+    bottom: 0;
+    left: 49%;
+    padding: 20px;
+    border: 1.5px solid rgba(255,255,255,0.8);
+    border-radius: 50%;
+	margin-bottom: 10px;
+
+}
+.header>span:after{
+	content:'';
+	position:absolute;
+	bottom: 11px;
+    left: 20%;
+	border-top: 12px solid rgba(255,255,255,0.4);
+	border-right:12px solid transparent;
+	border-left:12px solid transparent;
+	cursor:pointer;
+	
+	
+}
+
+                  /* End Styling Header */
+				  
+				  
+/* Start Styling About our Agency */
+.container .aboutAgency{
+	text-align: center;
+    width: 60%;
+    height: 280px;
+    margin: 40px auto;
+
+}
+
+.container .aboutAgency h1{text-transform:capitalize;}
+.container .aboutAgency	p{margin-bottom: 18px;line-height: 1.5;font-size: 18px;}
+
+
+/* End Styling About our Agency */			  
+		
+
+/* Start Styling Review */
+
+.review,.recommendationbckgd{
+	background-image:url("../images/bg-pattern.jpg");
+	background-size:cover;
+	width:100%;
+	min-height:200px;
+	
+}
+.container .fontawsome{
+	width: 23%;
+    height: 214px;
+    line-height: 214px;
+    position: relative;
+}
+.container .fontawsome i {
+    font-size: 50px;
+    color: #fff;
+}
+.container .fontawsome span {
+    position: absolute;
+    top: -22px;
+    font-size: 23px;
+    color: #fff;
+    left: 60px;
+}
+.container .fontawsome h3{
+	display: inline;
+    position: absolute;
+    top: -17px;
+    color: #fff;
+    text-transform: capitalize;
+    left: 61px;
+}
+
+
+
+/* End Styling Review */
+
+
+/* Start Best Project */
+
+.description-content{width:50%;text-align:center;margin: 0 auto 30px;}
+.description-content h1{margin-top: 96px;text-transform: capitalize;}
+.description-content p{color: #999;line-height: 1.5;font-size: 16px;}
+
+
+/* End Best Project */
+
+
+/* Start images */
+.images{
+	position:relative;
+	display: flex;
+    flex-wrap: wrap;
+	height: auto;
+    margin-bottom: 70px;
+	justify-content: center;
+}
+.images .image{height:400px;position:relative;}
+.images .image .hoverimg{position:absolute;width:100%;height:100%;background-color:rgba(0, 0, 0, 0.6);opacity:0;transition: all 0.6s ease-in-out;}
+.images .image .hoverimg p{
+	top: 31%;
+    left: 28%;
+    position: absolute;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 27px;
+    font-weight: bolder;
+    text-align: center;
+	transition: all 0.2s ease-in-out;
+	
+}
+.images .image .hoverimg span{
+	display: block;
+    font-size: 16px;
+    font-style: oblique;
+	transition: all 0.5s ease-in-out;
+	
+}
+.images .image .hoverimg:hover{opacity:1;}
+
+.images .image img{
+	width:400px;
+	height:400px;
+	background-size:cover;
+	background-position:50% 50%;
+}
+
+
+/* End Images */
+
+
+
+/* recommendation */
+
+.recommendationbckgd{
+	height:400px;
+}
+.recommendation{width:50%;text-align:center;margin:auto;position:relative;overflow:hidden;}
+.recommendation p{
+	font-size: 28px;
+    color: #cccc;
+    margin-top: 130px;
+}
+.recommendation h6{
+	font-size: 16px;
+    color: #cccc;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+
+
+/**Our signature */
+
+.container img.resize {width: 20%;height: 200px;margin: 27px 0;}
+
+
+
+/* LAtest Blog styling */
+
+
+.bckgrndblog {
+	background-color:#fafafa;
+	min-height: 1000px;
+}
+
+.bckgrndblog .container .dexcriptionblog{width:60%;text-align:center;margin:60px auto;}
+.bckgrndblog .container .dexcriptionblog h1{font-size: 45px;}
+.bckgrndblog .container .dexcriptionblog p{
+	color: #aaa;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}
+.bckgrndblog .container .imgblog {width:370px;margin-left: 30px;}
+.bckgrndblog .container .imgblog .imgcontent {position:relative;}
+.bckgrndblog .container .imgblog .imgcontent img{
+	width:370px;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.bckgrndblog .container .imgblog .imgcontent span {
+	    position: absolute;
+    bottom: 15px;
+    left: 10%;
+    padding: 10px 36px;
+    background-color: #222;
+    color: #fff;
+}
+
+.bckgrndblog .container .imgblog .descriptionimg{background-color:#fff;overflow:hidden;}
+.bckgrndblog .container .imgblog .descriptionimg h3,
+.bckgrndblog .container .imgblog .descriptionimg span,
+.bckgrndblog .container .imgblog .descriptionimg p{margin:auto 26px;}
+
+.bckgrndblog .container .imgblog .descriptionimg h3	{
+	font-size: 25px;
+    margin-top: 20px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+	}
+	
+	
+.bckgrndblog .container .imgblog .descriptionimg span {	text-transform: uppercase; font-weight: bolder;}
+
+
+.bckgrndblog .container .imgblog .descriptionimg p{
+	margin-top: 10px;
+    color: #aaa;
+    line-height: 1.5;
+    letter-spacing: 1px;
+	margin-bottom:35px
+}
+
+
+
+/* Footer */
+
+.footer .bckgrndform{background-color:#F6F6F6;}
+.footer .bckgrndform .info,.footer .bckgrndform .form{max-width:500px;}
+.footer .bckgrndform .info h1{
+	text-transform: capitalize;
+    font-weight: bolder;
+    font-size: 48px;
+	margin-top: 60px;
+}
+.footer .bckgrndform .info p{font-size: 26px;
+    font-weight: 900;}
+.footer .bckgrndform .info p:first-of-type{
+	    color: #aaa;
+    font-size: 19px;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+}
+.footer .bckgrndform .info span{
+	color: #666;
+    font-size: 19px;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+}
+
+.footer .bckgrndform .form {margin-top:140px;}
+.footer .bckgrndform .form input{
+    padding: 18px 20px;
+    color: #ccc;
+    font-weight: 900;
+    border-style: none;
+    margin-left: 15px;
+    margin-bottom: 14px;
+}
+.footer .bckgrndform .form .mmwidth{min-width: 485px;margin: 15px 0px 24px 15px;}
+.footer .bckgrndform .form textarea{
+    padding: 17px;
+    margin-left: 16px;
+    height: 182px;
+    min-width: 487px;
+    border: none;
+    margin-bottom: 18px;
+}
+.footer .bckgrndform .form .submt{background-color: #444;color: #eee;margin-bottom:90px;}
+
+
+
+
+.footer .bckgrndsignature {background-color:#EBEBEB;overflow:hidden;color: #666;text-align:center;height:100px}
+
+.footer .bckgrndsignature i{margin: 24px 5px 0px;}
+
+
+
+@media(max-width: 768px){
+	/* body{background-color:red;} */
+	
+	
+	/* Style Header */
+.icon {cursor:pointer}
+.container{	flex-direction: column;justify-content: center;}
+.icon i,.close-btn i 
+{
+	display: block;
+    position: absolute;
+    right: 0;
+    top: 38px;
+    font-size: 39px;
+    margin-right: 15px;
+    cursor: pointer;
+    z-index: 3;
+    color: #eee;
+}
+.close-btn i {right: 4px;display:none;} */
+.container .logo img, .container .navbar{line-height:50px;}
+.container .navbar{margin:auto;display:none;}
+.navbar ul { 
+	/* z-index:2; */
+	flex-direction: column;
+	text-align: center;
+	width:100%;
+	display:none;
+
+} 
+
+.container .fontawsome {
+    line-height: 120px;
+    position: relative;
+    left: 39%;
+    height: 120px;
+    width: 100%;
+}
+.container .aboutAgency{width:80%;}
+.recommendation{width:80%;}
+.description-content {width:80%;}
+.description-content h1 {margin-top: 49px;}
+.description-content p {color: #999;line-height: 1.5;font-size: 20px;}
+.recommendation p {font-size: 32px;color: #cccc;margin-top: 86px;}
+.direction {
+flex-direction: row;}
+.bckgrndblog .container .dexcriptionblog {
+    width: 80%;
+    text-align: center;
+margin: 50px auto;
+}
